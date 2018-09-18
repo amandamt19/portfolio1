@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
 html {
     font-size:18px;
@@ -11,22 +10,22 @@ h2 { font-size: 1rem; font-style: unbold}
 h3 {font-size: 1.125rem;}
 h4 {font-size:1.05rem; font-style:italic;}
 
-h1, h2, h3 {
-    font-family:Noto Sans JP;
+h1, h2, h3, p {
+    font-family: 'Slabo 27px', serif;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
+}
 
 .container {
     position: relative;
     text-align: center;
     color: lightcyan;
     font-size: 30px;
-    
-   
+
+
 }
 /* Centered text */
 .centered {
@@ -34,24 +33,40 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    /* grid */ 
+}
+
+/** {box-sizing: border-box}*/
 body {
-  margin: 40px;
+    margin: 20px;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+    color: #153641 ;
 }
 
 .box {
-  background-color: lightskyblue;
-  color: navy;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+    background-color:  #94cfc9;
+    color: navy;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+}
+
+.footer {
+    background-color:  #94cfc9;
+    color: navy;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.school {
+    font-size: 12px;
 }

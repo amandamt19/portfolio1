@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- This needs to be inside the head -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <head>
         <!-- Meta Tags -->
@@ -7,10 +8,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+          Don't forget to fill out the meta info!
+        -->
         <meta name="description" content="Enter a brief description." />
         <meta name="author" content="Enter your name here" />
 
         <!-- Linked CSS Stylesheet -->
+        <!--
+          All styles should be in the CSS stylesheet, not within a
+          style element.
+        -->
         <style>
             ul {
                 list-style-type: none;
@@ -37,13 +45,29 @@
         </style>
     </head>
     <body>
+        <!--
+          Recall from the first lecture, how there are particular elements
+          in HTML5 that are semantically appropriate, since they are recurrent
+          across web pages. Consider the nav and main element for example.
+
+          The nav should wrap the ul below, and the generic div.container, should
+          be renamed with a main instead.
+         -->
         <ul>
             <li><a href="index.html"><h2> Home</h2></a></li>
             <li><a href="about.html"><h2>About</h2></a></li>
+            <!--
+              Be sure that your file names are consistently named:
+                resume.html instead of Resume.html.
+            -->
             <li><a href="resume.html"><h2>Resume</h2></a></li>
         </ul>
 
         <div class="container">
+            <!--
+              Be sure to not use absolute values for media.
+              By doing so, your site is not responsive
+            -->
             <img src="assets/img/nice.jpg" alt="Nice" width="1230" height="700">
             <div class="centered"><h1> Hello, I'm Amanda! <br> Welcome to my website. </br> </h1>
             <h3> Marketer, writer, traveler.</h3>

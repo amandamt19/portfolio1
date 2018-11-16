@@ -1,3 +1,13 @@
+/*
+  Overall, be sure to revise the organization
+  and documentation of your CSS. Note this particular
+  example, which writes the more general rules first,
+  then mirrors the general hierarchy of the pages:
+  https://github.com/lingeringcode/lindgren-datastory/blob/gh-pages/assets/css/style.css
+
+  Also, be sure to mind your indentation and spacing throughout.
+ */
+
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
 html {
@@ -19,6 +29,14 @@ ul {
     padding: 0;
 }
 
+/*
+  Be sure to revise your landing page with
+  the lessons that we learned about responsive
+  design with CSS grid and flexbox. This design
+  uses the relative positioning scheme to overwrite
+  normal flow behaviors of block elements, but it also
+  introduces issues with regards to responsiveness.
+*/
 .container {
     position: relative;
     text-align: center;
@@ -40,6 +58,16 @@ body {
     margin: 20px;
 }
 
+/*
+  You have a gorgeous resume (PDF), why not
+  use grid to build on that design theme for
+  your website? Especially the resume page.
+
+  As it is, you plugged in a generic grid.
+  One of our homework assignments involved taking
+  our resume and considering how to design it
+  with grid and flexbox.
+ */
 .wrapper {
     display: grid;
     grid-template-columns: auto auto auto;

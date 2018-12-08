@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
     <!-- This needs to be inside the head -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <head>
+    
         <!-- Meta Tags -->
         <title>Home</title>
         <meta charset="utf-8">
@@ -19,30 +20,7 @@
           All styles should be in the CSS stylesheet, not within a
           style element.
         -->
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #4799b7;}
-
-            li {
-                float: left;
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 40px;
-                text-decoration: none;
-            }
-
-            li a:hover {
-                background-color: #6db3bf;
-            }
-        </style>
+        
     </head>
     <body>
         <!--
@@ -50,28 +28,30 @@
           in HTML5 that are semantically appropriate, since they are recurrent
           across web pages. Consider the nav and main element for example.
 
-          The nav should wrap the ul below, and the generic div.container, should
-          be renamed with a main instead.
          -->
-        <ul>
-            <li><a href="index.html"><h2> Home</h2></a></li>
-            <li><a href="about.html"><h2>About</h2></a></li>
-            <!--
-              Be sure that your file names are consistently named:
-                resume.html instead of Resume.html.
-            -->
-            <li><a href="resume.html"><h2>Resume</h2></a></li>
-        </ul>
+        <nav>
+            <ul class="indexUL">
+                <li><a href="index.html"><h2> Home</h2></a></li>
+                <li><a href="about.html"><h2>About</h2></a></li>
+            
+                <li><a href="resume.html"><h2>Resume</h2></a></li>
+            </ul>
+        </nav>
 
-        <div class="container">
+        <main class="container">
             <!--
               Be sure to not use absolute values for media.
               By doing so, your site is not responsive
+*Q what does this mean?
             -->
             <img src="assets/img/nice.jpg" alt="Nice" width="1230" height="700">
-            <div class="centered"><h1> Hello, I'm Amanda! <br> Welcome to my website. </br> </h1>
-            <h3> Marketer, writer, traveler.</h3>
-        </div>
+            <div class="centered">
+                <h1> 
+                    Hello, I'm Amanda! <br> Welcome to my website. 
+                </h1> 
+                <h3> Marketer, writer, traveler.</h3>
+            </div>
+        </main>
 
     </body>
 </html>
